@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   #get 'home/index'
 
- resources :countries
+ resources :countries do 
+    get :search
+ end 
   root 'home#index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
